@@ -37,4 +37,4 @@ const Problem1b = n => {
 var start2 = now();
 let solution2 = Problem1a(1000);
 console.log(`${solution2} found in ${(now() - start2) / 1000} seconds.`)
-// 233168 found in 0.000038717000000005444 seconds.233168 found in 0.000038717000000005444 seconds.
+// 233168 found in 0.000038717000000005444 seconds.
