@@ -28,8 +28,8 @@ namespace problem4
                 for (int j = i; j > 100; j--)
                 {
                     int number = i * j;
-                    if (number < largest_palindrome) { break; }
-                    if (number % 11 != 0) { continue; }
+                    if (number < largest_palindrome) { break; } // optimization 1
+                    if (number % 11 != 0) { continue; } // optimization 2
                     if (IsPalindrome(number.ToString())) { largest_palindrome = number; }
                 }
             }
