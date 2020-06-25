@@ -20,7 +20,7 @@ const problem6a = n => {
 }
 // mathematical method
 const problem6b = n => {
-    let sumOfSquares = n * (n + 1) * (2*n + 1) * (1 / 6);
+    let sumOfSquares = n * (n + 1) * (2*n + 1) / 6;
     let squareOfSum = (n * (n + 1) / 2) ** 2;
     return squareOfSum - sumOfSquares;
 }
