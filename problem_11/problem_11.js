@@ -1,7 +1,7 @@
 const now = require("performance-now")
 const lineReader = require("line-reader");
 
-const problem8 = () => {
+const problem11 = () => {
     const start = now();
     const grid = []
 
@@ -41,5 +41,5 @@ const problem8 = () => {
         }
     })
 }
-problem8();
+problem11();
 // 70600674 found in 0.006128407000000003 seconds.
