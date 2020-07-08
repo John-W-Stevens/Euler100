@@ -1,6 +1,12 @@
 import time
 from functools import reduce
 
+# Easy way -> cast string to integers
+def easy_peezy():
+    return str(sum([int(n) for n in open("./problem_13.txt", "r").read().split("\n")]))[0:10]    
+print(easy_peezy()) # Output -> 5537376230
+
+# The way that works in JavaScript & C# ->
 def add(n1, n2):
     """
     Adds two strings of digits representing numbers
@@ -36,7 +42,6 @@ def add(n1, n2):
 def problem_13():
     numbers = [n for n in open("./problem_13.txt", "r").read().split("\n")]
     return reduce( (lambda a,b: add(a,b)), numbers)[0:10]
-
 
 start = time.time()
 solution = problem_13()
