@@ -66,5 +66,7 @@ def problem_19():
 
     return num_sundays
 
-print(problem_19())
-# 171
+start = time.time()
+solution = problem_19()
+print(f"{solution} found in {time.time() - start} seconds.")
+# 171 found in 0.0010988712310791016 seconds.
